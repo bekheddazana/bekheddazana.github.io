@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekhedda Zana | Expert Transformation Digitale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .lang-en { display: none; }
+        .card-shadow { box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .card-shadow:hover { transform: translateY(-10px); }
+        #lightbox.active { display: flex; }
+        .img-thumb { height: 120px; width: 100%; object-fit: cover; border-radius: 0.75rem; cursor: zoom-in; transition: 0.2s; border: 1px solid #e2e8f0; }
+        .img-thumb:hover { opacity: 0.8; transform: scale(1.02); }
+        .gradient-text { background: linear-gradient(to right, #059669, #0284c7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tighter text-slate-900 uppercase">
+                ZB | <span class="text-emerald-600">Expert Transformation Digitale</span>
+            </span>
+            <div class="flex items-center space-x-6">
+                <div class="flex bg-slate-100 rounded-lg p-1">
+                    <button onclick="toggleLang('fr')" class="px-3 py-1 text-xs font-bold rounded-md hover:bg-white transition">FR</button>
+                    <button onclick="toggleLang('en')" class="px-3 py-1 text-xs font-bold rounded-md hover:bg-white transition">EN</button>
+                </div>
+                <a href="#contact" class="bg-slate-900 text-white px-5 py-2 rounded-lg text-sm hover:bg-emerald-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-24 text-center px-6">
+        <h1 class="text-5xl md:text-6xl font-black text-slate-900 mb-6 lang-fr">Architecte de Systèmes <span class="gradient-text">Sécurisés</span></h1>
+        <h1 class="text-5xl md:text-6xl font-black text-slate-900 mb-6 lang-en">Secure Systems <span class="gradient-text">Architect</span></h1>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto lang-fr leading-relaxed">Expert en digitalisation administrative, analyse de données Python et cybersécurité opérationnelle (SOC/SIEM). Spécialiste du marché Fintech et Gouvernance.</p>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto lang-en leading-relaxed">Expert in administrative digitalization, Python data analysis, and operational cybersecurity (SOC/SIEM). Fintech & Governance Specialist.</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 mb-16">
+        <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100 p-8">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-8 gap-6">
+                <div class="max-w-3xl">
+                    <h3 class="text-3xl font-bold text-slate-900 lang-fr">Plateforme de Gestion des Œuvres Sociales</h3>
+                    <h3 class="text-3xl font-bold text-slate-900 lang-en">Social Works Management Platform</h3>
+                    <p class="text-slate-600 mt-4 lang-fr leading-relaxed italic">Système certifié pour la traçabilité financière (Audit Trail) et l'intégration d'IA décisionnelle.</p>
+                    <p class="text-slate-600 mt-4 lang-en leading-relaxed italic">Certified system for financial traceability (Audit Trail) and AI-driven decision making.</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase">FinTech</span>
+                    <span class="bg-emerald-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase">AI Integration</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                <img src="images/Project_social_loan.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan1.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan3.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan4.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan5.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan6.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan7.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan8.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan9.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan10.png" onclick="openLightbox(this.src)" class="img-thumb">
+                <img src="images/project_social_loan11.png" onclick="openLightbox(this.src)" class="img-thumb">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 mb-20 grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100 p-8">
+            <img src="images/project_security_onion.png" onclick="openLightbox(this.src)" class="w-full h-56 object-cover rounded-2xl mb-6 cursor-zoom-in shadow-inner">
+            <h3 class="text-2xl font-bold mb-2">Security Onion (SOC)</h3>
+            <p class="text-slate-600 text-sm lang-fr leading-relaxed">Surveillance réseau en temps réel, détection d'intrusions (IDS) et analyse des menaces critiques.</p>
+            <p class="text-slate-600 text-sm lang-en leading-relaxed">Real-time network monitoring, intrusion detection (IDS), and critical threat analysis.</p>
+        </div>
+
+        <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100 p-8">
+            <img src="images/project_openssl.png" onclick="openLightbox(this.src)" class="w-full h-56 object-cover rounded-2xl mb-6 cursor-zoom-in shadow-inner">
+            <h3 class="text-2xl font-bold mb-2">OpenSSL / RSA Vault</h3>
+            <p class="text-slate-600 text-sm lang-fr leading-relaxed">Sécurisation des actifs numériques par chiffrement asymétrique RSA et gestion des certificats.</p>
+            <p class="text-slate-600 text-sm lang-en leading-relaxed">Securing digital assets via RSA asymmetric encryption and certificate management.</p>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-slate-900 rounded-[3rem] text-white">
+        <h2 class="text-4xl font-black mb-16 text-center lang-fr underline decoration-emerald-500 underline-offset-8">Expertise Technique & Big Data</h2>
+        <h2 class="text-4xl font-black mb-16 text-center lang-en underline decoration-emerald-500 underline-offset-8">Technical Expertise & Big Data</h2>
+        
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-6 border-l-2 border-emerald-500 bg-slate-800/50 rounded-r-xl">
+                <h4 class="text-xl font-bold mb-4 text-emerald-400">Data Science</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    <b class="text-white">Librairies:</b> Pandas, NumPy, Matplotlib, Scikit-Learn.<br>
+                    <b class="text-white">Analyses:</b> Clustering (K-Means), Régression, Nettoyage de données massives (Big Data Cleaning).
+                </p>
+            </div>
+            <div class="p-6 border-l-2 border-blue-500 bg-slate-800/50 rounded-r-xl">
+                <h4 class="text-xl font-bold mb-4 text-blue-400">Software Engineering</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    <b class="text-white">Stack:</b> Python, Flask, SQLite, Jinja2.<br>
+                    <b class="text-white">Business:</b> Génération de fichiers financiers VIRM, Automatisation de paie complexe.
+                </p>
+            </div>
+            <div class="p-6 border-l-2 border-red-500 bg-slate-800/50 rounded-r-xl">
+                <h4 class="text-xl font-bold mb-4 text-red-400">Cybersecurity</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    <b class="text-white">SOC:</b> Security Onion, SIEM, ELK Stack.<br>
+                    <b class="text-white">Gouvernance:</b> Cryptographie RSA, Protocoles sécurisés, Audit Trail Compliance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-24 text-center">
+        <div class="inline-block bg-white p-12 rounded-[2rem] card-shadow border border-slate-100">
+            <h2 class="text-3xl font-black mb-2">Bekhedda Zana</h2>
+            <p class="text-emerald-600 font-bold mb-8 uppercase tracking-widest text-sm">Expert Software Engineer & Data Analyst</p>
+            <div class="flex flex-col items-center gap-6">
+                <div class="flex items-center space-x-3 text-2xl font-mono">
+                    <span class="text-3xl">🇩🇿</span>
+                    <a href="tel:+213673647004" class="hover:text-emerald-600 transition font-bold">+213 673 647 004</a>
+                </div>
+                <a href="mailto:doubechar.onou.dz@email.com" class="text-slate-500 hover:text-slate-900 transition flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> doubechar.onou.dz@email.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 bg-black/95 hidden z-[100] items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" class="max-w-full max-h-full rounded shadow-2xl transition-all duration-500">
+    </div>
+
+    <script>
+        function toggleLang(l) {
+            document.querySelectorAll('.lang-fr').forEach(e => e.style.display = l==='fr'?'block':'none');
+            document.querySelectorAll('.lang-en').forEach(e => e.style.display = l==='en'?'block':'none');
+        }
+        function openLightbox(s) {
+            document.getElementById('lightbox-img').src = s;
+            document.getElementById('lightbox').classList.replace('hidden', 'flex');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.replace('flex', 'hidden');
+        }
+    </script>
+</body>
+</html>
